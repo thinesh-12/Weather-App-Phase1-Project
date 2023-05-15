@@ -3,7 +3,7 @@
 This is a simple web application that displays the current weather and a five-day forecast for a given location.
 
 How to Use
-To use the app, simply enter a city name or zip code in the search box and click the "Search" button. The app will then retrieve the current weather and forecast data for the specified location from the OpenWeatherMap API and display it on the page.
+To use the app, simply enter a city name in the search box and click the "Search" button. The app will then retrieve the current weather and forecast data for the specified location from the OpenWeatherMap API and display it on the page.
 
 Installation
 To install and run the app on your local machine, follow these steps:
