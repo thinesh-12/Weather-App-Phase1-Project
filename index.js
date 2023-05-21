@@ -21,10 +21,25 @@ document.addEventListener("DOMContentLoaded", () => {
   searchInput.addEventListener("keyup", (event) => {
     if(event.key === "Enter") {
       getWeatherData(city);
-
     }
   });
 });
+   
+    window.addEventListener("load", () => {
+      // Code to execute when the window finishes loading
+    
+      // getting user location based on their Ip information
+      fetch("https://ipinfo.io/json?token=b8dbc1721fab40")
+        .then((response) => response.json())
+        .then((locationData) => {
+          const defaultCity = locationData.city;
+          getWeatherData(defaultCity);
+        })
+        .catch((error) => {
+          console.log("Unable to find User location:", error);
+        });
+      
+    });
 
 
 async function getWeatherData(city) {
