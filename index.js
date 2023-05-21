@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     getWeatherData(city);
   });
+
+  // Event listener for Enter key 
+  searchInput.addEventListener("keyup", (event) => {
+    if(event.key === "Enter") {
+      getWeatherData(city);
+
+    }
+  });
 });
 
 
